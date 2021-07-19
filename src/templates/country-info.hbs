@@ -1,16 +1,19 @@
-<p class="info-country">
+<div class="info-country">
     <img src="{{flag}}" alt="{{name}}" class="flag" width="50">
-    <span class="info-name-country">{{name}}</span>
-</p>
-<p>
-    <span class="title">Capital:</span> {{capital}}
-</p>
-<p>
-    <span class="title">population:</span> {{population}}
-</p>
-<p>
-    <span class="title">languages:</span> 
+    <h2 class="info-name-country">{{name}}</h2>
+</div>
+
+<div class="info-country">
+    <h2 class="title">Capital: &nbsp; </h2> {{capital}}
+</div>
+
+<div class="info-country">
+    <h2 class="title">Population: &nbsp; </h2> {{population}}
+</div>
+
+<div class="info-country">
+    <h2 class="title">Languages: &nbsp; </h2> 
         {{#each this.languages}}
             {{this.name}}, 
         {{/each}}
-</p>
+</div>
