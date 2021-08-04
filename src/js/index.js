@@ -15,7 +15,7 @@ refs.inputSearch.addEventListener('input', _debounce(onSearch.bind(this), DEBOUN
 
 
 function onSearch(ev) {
-    const valueSearch = ev.target.value;
+    const valueSearch = ev.target.value.trim();
     if (valueSearch === '') {
         changeDataCard('countryInfoCard', 'countryListContainer');
         return
